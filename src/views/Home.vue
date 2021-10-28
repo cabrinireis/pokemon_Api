@@ -1,18 +1,28 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div id="app">
+    <pokemon/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import Pokemon from "../components/Pokemon.vue";
 
 export default {
-  name: "Home",
+  name: "app",
   components: {
-    HelloWorld,
-  },
+    Pokemon
+  }
 };
 </script>
+
+<style>
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+#app {
+  background: radial-gradient(#ddd8ca, #0870f1);
+}
+</style>
